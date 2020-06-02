@@ -12,9 +12,14 @@ final class OrderRepository
     public function findAll(): array
     {
         return [
-            1 => new OrderEntity(1, '201900001', 500),
-            2 => new OrderEntity(2, '202000001', 100),
-            3 => new OrderEntity(3, '202000002', 1500),
+            1 => $this->createEntity(1, '201900001', 300),
+            2 => $this->createEntity(2, '202000001', 100),
+            3 => $this->createEntity(3, '202000002', 1500),
         ];
+    }
+
+    protected function createEntity($id, $vs, $totalPrice): OrderEntity
+    {
+        return new OrderEntity($id, $vs, $totalPrice);
     }
 }
