@@ -1,0 +1,24 @@
+{
+    "name": "nufue/order-module",
+    "description": "PoC order module",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "nf",
+            "email": "jiri@hrazdil.info"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Webspire\\Module\\Order\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Project\\": "test"
+        }
+    }
+}
