@@ -4,7 +4,7 @@ namespace Webspire\Module\Order\Repository;
 
 use Project\Module\Order\Entity\OrderEntity;
 
-final class OrderRepository
+class OrderRepository
 {
     /**
      * @return array|OrderEntity[]
